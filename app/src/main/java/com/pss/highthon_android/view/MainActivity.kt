@@ -10,21 +10,21 @@ import com.pss.highthon_android.databinding.ActivityMainBinding
 import com.pss.highthon_android.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
-@AndroidEntryPoint
-class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
-    private val mainViewModel by viewModels<MainViewModel>()
+    @AndroidEntryPoint
+    class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
+        private val mainViewModel by viewModels<MainViewModel>()
 
 
-    override fun init() {
-        initBottomNavBar()
-    }
+        override fun init() {
+            initBottomNavBar()
+        }
 
-    private fun initBottomNavBar() {
-        val navController =
-            supportFragmentManager.findFragmentById(R.id.nav_host)?.findNavController()
-        val nav = binding.bottomNav as BottomNavigationView
-        navController?.let {
-            nav.setupWithNavController(navController)
+        private fun initBottomNavBar() {
+            val navController =
+                supportFragmentManager.findFragmentById(R.id.nav_host)?.findNavController()
+            val nav = binding.bottomNav as BottomNavigationView
+            navController?.let {
+                nav.setupWithNavController(navController)
+            }
         }
     }
-}
