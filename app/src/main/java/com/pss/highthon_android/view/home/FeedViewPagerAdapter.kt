@@ -6,14 +6,17 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.pss.highthon_android.R
+import com.pss.highthon_android.data.remote.model.Post
 import com.pss.highthon_android.databinding.FeedItemBinding
+import com.pss.highthon_android.viewmodel.HomeViewModel
 
-class FeedViewPagerAdapter :
-    RecyclerView.Adapter<FeedViewPagerAdapter.FeedViewPagerViewHolder>() {
+class FeedViewPagerAdapter(
+    private val viewModel : HomeViewModel
+) : RecyclerView.Adapter<FeedViewPagerAdapter.FeedViewPagerViewHolder>() {
 
 
     override fun getItemCount(): Int {
-        return 5
+        return viewModel.postList.size
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeedViewPagerViewHolder {
@@ -29,19 +32,19 @@ class FeedViewPagerAdapter :
 
     override fun onBindViewHolder(holder: FeedViewPagerViewHolder, position: Int) {
         holder.binding.imageView.clipToOutline = true
-        /* holder.binding.rankingImg.apply {
+/*         holder.binding.rankingImg.apply {
             setImageResource(imgList[position])
             setColorFilter(Color.parseColor("#FFFFFF"))
-        }
+        }*/
 
-        holder.bind(viewModel.userRankingList[position])*/
+        holder.bind(viewModel.postList[position])
     }
 
     inner class FeedViewPagerViewHolder(val binding: FeedItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        /*      fun bind(data: UserInfo) {
+              fun bind(data: Post) {
             binding.data = data
             binding.executePendingBindings()
-        }*/
+        }
     }
 }

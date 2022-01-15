@@ -3,7 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-
+        <variable
+            name="data"
+            type="com.pss.highthon_android.data.remote.model.Post" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,28 +23,30 @@
             android:src="@drawable/ic_launcher_background" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/notosans_bold"
             android:gravity="center"
             android:includeFontPadding="false"
+            set_title="@{data.title}"
             android:text="제목입니다"
             android:textColor="@color/white"
             android:textSize="30sp"
             android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintBottom_toTopOf="@+id/date"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/notosans_bold"
             android:gravity="center"
             android:layout_marginBottom="30dp"
             android:includeFontPadding="false"
+            set_date="@{data.date}"
             android:text="2021년 01월 15일 박상선"
             android:textColor="@color/white"
             android:textSize="20sp"
