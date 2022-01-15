@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:paddingEnd="21dp"
+        android:paddingStart="21dp"
+        android:paddingBottom="11dp"
+        android:paddingTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/category_not_choice_frame"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/category_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="카테고리"
+            android:textColor="#3C3C3C"
+            android:fontFamily="@font/notosans_bold"
+            android:includeFontPadding="false"
+            android:textSize="17sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
