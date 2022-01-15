@@ -3,7 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/apple/AndroidStudioProjects/Quick_Setup/app/src/main/res/layout/activity_main.xml" value="0.28125" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/activity_main.xml" value="0.2462962962962963" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_home.xml" value="0.28125" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_my_page.xml" value="0.28125" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_upload.xml" value="0.28125" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/menu_select_color.xml" value="0.1453125" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.28125" />
       </map>
     </option>
   </component>
