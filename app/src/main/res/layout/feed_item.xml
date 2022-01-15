@@ -11,7 +11,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_margin="50dp"
-        android:elevation="5dp"
+        android:background="@drawable/feed_frame"
+        android:elevation="7dp"
         android:layout_height="match_parent">
 
         <ImageView
@@ -20,7 +21,7 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:background="@drawable/feed_frame"
-            android:src="@drawable/ic_launcher_background" />
+            android:src="@drawable/birthday_1" />
 
         <TextView
             android:id="@+id/title"
@@ -32,7 +33,7 @@
             set_title="@{data.title}"
             android:text="제목입니다"
             android:textColor="@color/white"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toTopOf="@+id/date"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,9 +48,9 @@
             android:layout_marginBottom="30dp"
             android:includeFontPadding="false"
             set_date="@{data.date}"
-            android:text="2021년 01월 15일 박상선"
+            android:text="2021년 01월 15일"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

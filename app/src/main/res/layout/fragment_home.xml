@@ -20,7 +20,7 @@
             android:layout_marginTop="@dimen/app_name_margin"
             android:fontFamily="@font/notosans_black"
             android:includeFontPadding="false"
-            android:text="셀피"
+            android:text="CelPeey"
             android:textColor="@color/black"
             android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
