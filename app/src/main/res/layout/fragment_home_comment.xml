@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="fragment"
+            type="com.pss.highthon_android.view.home.HomeCommentFragment" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".view.home.HomeCommentFragment">
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:onClick="@{fragment::clickBackBtn}"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
         <TextView
@@ -20,8 +37,7 @@
             android:text="저의 생일을 축하해주세요"
             android:textColor="@color/black"
             android:textSize="28dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.309"
+            android:layout_marginStart="40dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,18 +45,14 @@
             android:id="@+id/content"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
             android:fontFamily="@font/notosans_light"
             android:text="오늘은 저의 생일이에요 모두가 저를 축하해주면 좋겠어요! 다들 오늘도 즐거운 하루 보내시길.."
             android:textColor="@color/black"
             android:textSize="15dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/recyclerView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
+
             app:layout_constraintStart_toStartOf="@+id/title"
-            app:layout_constraintTop_toBottomOf="@+id/title"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
