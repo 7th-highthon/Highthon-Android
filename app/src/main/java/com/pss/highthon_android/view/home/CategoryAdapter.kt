@@ -1,5 +1,6 @@
 package com.pss.highthon_android.view.home
 
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -34,31 +35,51 @@ class CategoryAdapter(
         when (viewModel.eventChoiceCategory.value) {
             //생일
             "birthday" -> {
-                if (position == 0) holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
+                if (position == 0) {
+                    holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
+                    holder.binding.categoryTxt.setTextColor(Color.WHITE)
+                }
             }
 
             //졸업
             "graduated" -> {
-                if (position == 1) holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
-
+                if (position == 1) {
+                    holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
+                    holder.binding.categoryTxt.setTextColor(Color.WHITE)
+                }
             }
 
             //취업
             "employment" -> {
-                if (position == 2) holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
-
+                if (position == 2) {
+                    holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
+                    holder.binding.categoryTxt.setTextColor(Color.WHITE)
+                }
             }
 
             //연애
             "romantic" -> {
-                if (position == 3) holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
-
+                if (position == 3) {
+                    holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
+                    holder.binding.categoryTxt.setTextColor(Color.WHITE)
+                }
             }
 
             //기타
             "etc" -> {
-                if (position == 4) holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
-
+                if (position == 4) {
+                    holder.binding.frame.setBackgroundResource(R.drawable.category_choice_frame)
+                    holder.binding.categoryTxt.setTextColor(Color.WHITE)
+                }
+            }
+        }
+        holder.binding.frame.setOnClickListener {
+            when(position){
+                0 -> viewModel.setCategory("birthday")
+                1 -> viewModel.setCategory("graduated")
+                2 -> viewModel.setCategory("employment")
+                3 -> viewModel.setCategory("romantic")
+                4 -> viewModel.setCategory("etc")
             }
         }
         with(holder.binding.categoryTxt) {

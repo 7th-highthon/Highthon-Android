@@ -21,10 +21,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="카테고리"
-            android:textColor="@color/white"
+            android:textColor="#3C3C3C"
             android:fontFamily="@font/notosans_bold"
             android:includeFontPadding="false"
-            android:textSize="15sp" />
+            android:textSize="17sp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
