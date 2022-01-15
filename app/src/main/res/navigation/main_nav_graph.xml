@@ -13,7 +13,7 @@
         android:label="MyPageFragment" />
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.pss.highthon_android.view.HomeFragment"
+        android:name="com.pss.highthon_android.view.home.HomeFragment"
         tools:layout="@layout/fragment_home"
         android:label="HomeFragment" />
     <fragment
