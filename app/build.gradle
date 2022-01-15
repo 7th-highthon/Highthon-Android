@@ -81,4 +81,6 @@ dependencies {
     //nav component
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    implementation 'com.github.ParkSangSun1:NotificationBarCustom:1.0.3'
 }
