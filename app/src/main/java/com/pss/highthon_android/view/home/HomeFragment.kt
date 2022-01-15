@@ -16,6 +16,17 @@ import com.pss.highthon_android.view.home.adapter.HomeCommentRecyclerViewAdapter
 class HomeFragment : BaseFragment<FragmentHomeCommentBinding>(R.layout.fragment_home_comment) {
 
     override fun init() {
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+        binding.recyclerView.setHasFixedSize(true)
+        binding.recyclerView.adapter = HomeCommentRecyclerViewAdapter(setNickname(),setComment())
+    }
+
+    private fun setComment(): ArrayList<String> {
+        return arrayListOf("생일축하포카링~","기모띠 야매떄~","이거슨 예시","킥킥스")
+    }
+
+    private fun setNickname(): ArrayList<String>{
+        return arrayListOf("킬킬킬","바사바","소세지","냐미쩝")
     }
 
 }

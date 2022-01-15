@@ -5,6 +5,7 @@
     android:layout_width="180dp"
     android:background="@drawable/home_background"
     android:elevation="6dp"
+    android:id="@+id/comment_contentview"
     android:backgroundTint="@color/main_color"
     android:layout_margin="10dp"
     android:layout_height="240dp">

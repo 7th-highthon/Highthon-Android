@@ -1,9 +1,13 @@
 package com.pss.highthon_android.view.home.adapter
 
+import android.content.Context
+import android.content.res.ColorStateList
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.pss.highthon_android.R
 import com.pss.highthon_android.data.db.entity.CommentData
@@ -19,6 +23,7 @@ class HomeCommentRecyclerViewAdapter(dataNickName : ArrayList<String>, dataComme
     {
             val nickname = itemView.findViewById<TextView>(R.id.nickname_textview)
             val comment = itemView.findViewById<TextView>(R.id.comment_textView)
+            val background = itemView.findViewById<ConstraintLayout>(R.id.comment_contentview)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
