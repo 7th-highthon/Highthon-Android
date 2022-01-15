@@ -1,4 +1,4 @@
-package com.pss.quick_setup.repository
+package com.pss.highthon_android.repository
 
 import javax.inject.Inject
 

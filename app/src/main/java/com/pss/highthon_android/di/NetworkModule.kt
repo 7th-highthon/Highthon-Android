@@ -1,6 +1,6 @@
-package com.pss.quick_setup.di
+package com.pss.highthon_android.di
 
-import com.pss.quick_setup.widget.utils.Utils.BASE_URL
+import com.pss.highthon_android.widget.utils.Utils.BASE_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

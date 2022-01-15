@@ -1,10 +1,8 @@
-package com.pss.quick_setup.di
+package com.pss.highthon_android.di
 
 import dagger.Module
-import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)

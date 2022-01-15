@@ -1,4 +1,4 @@
-package com.pss.quick_setup
+package com.pss.highthon_android
 
 import org.junit.Test
 
