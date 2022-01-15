@@ -38,7 +38,7 @@ class FeedViewPagerAdapter(
         }*/
 
         holder.binding.imageView.setOnClickListener {
-            viewModel.callEventFeedClick()
+            viewModel.callEventFeedClick(position)
         }
 
         holder.bind(viewModel.postList[position])
