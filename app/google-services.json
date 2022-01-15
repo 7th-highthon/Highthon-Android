@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "784446711455",
+    "project_id": "celpeey-highthon",
+    "storage_bucket": "celpeey-highthon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784446711455:android:392eead594e727dbbf64aa",
+        "android_client_info": {
+          "package_name": "com.pss.highthon_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784446711455-jlj5sohp74qigq6i3jg3pkdapej6s29a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx0lI1z6uHoaUWUi0_bJN06it-cnaauXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "784446711455-jlj5sohp74qigq6i3jg3pkdapej6s29a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
