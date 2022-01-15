@@ -2,4 +2,5 @@
     <string name="app_name">셀피</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="test_web_client_id">784446711455-jlj5sohp74qigq6i3jg3pkdapej6s29a.apps.googleusercontent.com</string>
 </resources>
