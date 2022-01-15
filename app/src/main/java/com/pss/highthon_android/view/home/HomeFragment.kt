@@ -6,17 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.pss.highthon_android.R
 import com.pss.highthon_android.base.BaseFragment
 import com.pss.highthon_android.databinding.FragmentHomeBinding
 import com.pss.highthon_android.viewmodel.HomeViewModel
+import com.pss.highthon_android.viewmodel.MainViewModel
 import com.pss.highthon_android.widget.extension.showHorizontal
 import com.pss.highthon_android.widget.extension.showVertical
 
 
 class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     private val homeViewModel by activityViewModels<HomeViewModel>()
+    private val mainViewModel by activityViewModels<MainViewModel>()
 
 
     override fun init() {
@@ -37,6 +40,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         homeViewModel.eventChoiceCategory.observe(this,{
             initRecyclerView()
             homeViewModel.getPost()
+        })
+
+        homeViewModel.eventFeedClick.observe(this,{
+            this.findNavController().navigate(R.id.action_homeFragment_to_homeCommentFragment)
+            mainViewModel.setActionView(false)
         })
     }
 

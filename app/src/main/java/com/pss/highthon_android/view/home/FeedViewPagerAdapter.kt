@@ -37,6 +37,10 @@ class FeedViewPagerAdapter(
             setColorFilter(Color.parseColor("#FFFFFF"))
         }*/
 
+        holder.binding.imageView.setOnClickListener {
+            viewModel.callEventFeedClick()
+        }
+
         holder.bind(viewModel.postList[position])
     }
 

@@ -2,6 +2,7 @@ package com.pss.highthon_android.widget.extension
 
 import android.content.Context
 import android.content.Intent
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -22,4 +23,9 @@ fun RecyclerView.showVertical(context: Context){
 fun RecyclerView.showHorizontal(context: Context){
     this.layoutManager =
         LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
+}
+
+//true = visible , false = gone
+fun View.setVisibility(v: Boolean) {
+    this.visibility = if (v) View.VISIBLE else View.GONE
 }
