@@ -8,9 +8,16 @@
 
     <fragment
         android:id="@+id/myPageFragment"
-        android:name="com.pss.highthon_android.view.MyPageFragment"
+        android:name="com.pss.highthon_android.view.mypage.MyPageFragment"
         tools:layout="@layout/fragment_my_page"
-        android:label="MyPageFragment" />
+        android:label="MyPageFragment" >
+        <action
+            android:id="@+id/action_myPageFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+        <action
+            android:id="@+id/action_myPageFragment_to_myPostFragment"
+            app:destination="@id/myPostFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.pss.highthon_android.view.home.HomeFragment"
@@ -21,4 +28,31 @@
         android:name="com.pss.highthon_android.view.UploadFragment"
         tools:layout="@layout/fragment_upload"
         android:label="UploadFragment" />
+    <fragment
+        android:id="@+id/FAQFragment"
+        android:name="com.pss.highthon_android.view.mypage.FAQFragment"
+        android:label="FAQFragment" >
+        <action
+            android:id="@+id/action_FAQFragment_to_explainFragment"
+            app:destination="@id/explainFragment" />
+        <action
+            android:id="@+id/action_FAQFragment_to_myPageFragment"
+            app:destination="@id/myPageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/explainFragment"
+        android:name="com.pss.highthon_android.view.mypage.ExplainFragment"
+        android:label="ExplainFragment" >
+        <action
+            android:id="@+id/action_explainFragment_to_FAQFragment"
+            app:destination="@id/FAQFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myPostFragment"
+        android:name="com.pss.highthon_android.view.mypage.MyPostFragment"
+        android:label="MyPostFragment" >
+        <action
+            android:id="@+id/action_myPostFragment_to_myPageFragment"
+            app:destination="@id/myPageFragment" />
+    </fragment>
 </navigation>
