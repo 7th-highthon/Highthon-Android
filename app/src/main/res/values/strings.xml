@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">셀피</string>
+    <string name="how_to_use">우선 회원가입, 로그인을 해야겠죠?\n 그 다음 자신이 축하 해주고싶은 사람을 골라요! \n 마지막으로 축하해주면 끝!</string>
+    <string name="how_to_easy">이렇게 쉬운데 \n모른다고요?</string>
+    <string name="how_to_easy_end">어때요 간단하죠?</string>
+    <string name="why_to_make">학교에는 정말 \n축하할일이 정말 많죠!</string>
+    <string name="why_to_make_explain">학교에서는 우리 주변에서 항상 축하할일이 생기죠!\n\n그런일들을 하나하나 다 축하하기엔 친구들에게 알리기도 힘들고 하나하나 축하해주기도 힘들죠...</string>
+    <string name="why_to_make_end">그래서 나왔어요!</string>
+    <string name="who_make">누가누가 만들었나요?</string>
+    <string name="who_make_explain">예쁜 디자인을 해주신 김민주 누님, \n그리고 안드로이드 전반을 담당한 미래가 기대되는\n 안드로이드 개발자 3명 최윤성, 정민혁, 박상선</string>
+    <string name="who_make_end">수고하셨습니다!</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
