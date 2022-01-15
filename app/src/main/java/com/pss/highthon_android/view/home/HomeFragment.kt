@@ -22,12 +22,11 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     override fun init() {
         observeViewModel()
         homeViewModel.setCategory("birthday")
-        initRecyclerView()
     }
 
     private fun initRecyclerView(){
         binding.categoryRecyclerView.showHorizontal(requireContext())
-        binding.categoryRecyclerView.adapter = CategoryAdapter()
+        binding.categoryRecyclerView.adapter = CategoryAdapter(homeViewModel)
     }
 
     private fun observeViewModel(){
@@ -36,6 +35,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
         })
 
         homeViewModel.eventChoiceCategory.observe(this,{
+            initRecyclerView()
             homeViewModel.getPost()
         })
     }
