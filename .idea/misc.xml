@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="../../Library/Android/sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.16805555555555557" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/drawable/category_frame.xml" value="0.16145833333333334" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/drawable/category_not_choice_frame.xml" value="0.22239583333333332" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/drawable/feed_frame.xml" value="0.16145833333333334" />
@@ -13,28 +12,15 @@
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/feed_item.xml" value="0.176" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_home.xml" value="0.4" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_home_comment.xml" value="0.16799999999999998" />
-        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_my_page.xml" value="0.28125" />
-        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_upload.xml" value="0.28125" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_my_page.xml" value="0.24239791485664638" />
+        <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/fragment_upload.xml" value="0.4" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/home_comment_item.xml" value="0.4" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/layout/menu_select_color.xml" value="0.1453125" />
         <entry key="..\:/Users/apple/AndroidStudioProjects/Highthon-Android/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.28125" />
-        <entry key="app/src/main/res/drawable/five_background.xml" value="0.1824074074074074" />
-        <entry key="app/src/main/res/drawable/fourbackground.xml" value="0.1824074074074074" />
-        <entry key="app/src/main/res/drawable/home_background.xml" value="0.1824074074074074" />
-        <entry key="app/src/main/res/drawable/three_background.xml" value="0.1824074074074074" />
-        <entry key="app/src/main/res/drawable/two_background.xml" value="0.1824074074074074" />
-        <entry key="app/src/main/res/layout/feed_item.xml" value="0.16805555555555557" />
-        <entry key="app/src/main/res/layout/fragment_explain.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_f_a_qs.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1890625" />
-        <entry key="app/src/main/res/layout/fragment_my_page.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_my_post.xml" value="0.175" />
-        <entry key="app/src/main/res/layout/fragment_upload.xml" value="0.1890625" />
-        <entry key="app/src/main/res/layout/my_post_item.xml" value="0.5" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
