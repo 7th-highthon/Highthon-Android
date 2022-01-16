@@ -3,13 +3,16 @@
     <item
         android:id="@+id/homeFragment"
         android:title="홈"
+        android:icon="@drawable/home"
         />
     <item
         android:id="@+id/uploadFragment"
         android:title="업로드"
+        android:icon="@drawable/upload"
         />
     <item
         android:id="@+id/myPageFragment"
         android:title="내정보"
+        android:icon="@drawable/user"
        />
 </menu>
