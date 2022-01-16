@@ -38,7 +38,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/notosans_bold"
-            android:text="최윤성"
+            android:text="박상선"
             android:includeFontPadding="false"
             android:textColor="@color/black"
             android:textSize="30dp"
