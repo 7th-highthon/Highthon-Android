@@ -49,9 +49,9 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>(R.layout.fragment_home) {
     }
 
     private fun initViewPager() {
-        //val imgList = arrayListOf<Int>(R.drawable.first, R.drawable.second, R.drawable.third)
+        val imgList = arrayListOf<Int>(R.drawable.birthday_1, R.drawable.graduated_1, R.drawable.employment_1, R.drawable.romantic_1, R.drawable.etc_1)
         with(binding.feedViewPager2) {
-            adapter = FeedViewPagerAdapter(homeViewModel)
+            adapter = FeedViewPagerAdapter(homeViewModel, imgList)
             setPadding(30, 0, 30, 0)
             registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
                 override fun onPageScrolled(

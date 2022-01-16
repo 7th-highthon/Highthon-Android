@@ -11,7 +11,8 @@ import com.pss.highthon_android.databinding.FeedItemBinding
 import com.pss.highthon_android.viewmodel.HomeViewModel
 
 class FeedViewPagerAdapter(
-    private val viewModel : HomeViewModel
+    private val viewModel: HomeViewModel,
+    private val imgList: ArrayList<Int>
 ) : RecyclerView.Adapter<FeedViewPagerAdapter.FeedViewPagerViewHolder>() {
 
 
@@ -32,11 +33,25 @@ class FeedViewPagerAdapter(
 
     override fun onBindViewHolder(holder: FeedViewPagerViewHolder, position: Int) {
         holder.binding.imageView.clipToOutline = true
-/*         holder.binding.rankingImg.apply {
-            setImageResource(imgList[position])
-            setColorFilter(Color.parseColor("#FFFFFF"))
-        }*/
-
+        holder.binding.imageView.apply {
+            when (viewModel.eventChoiceCategory.value) {
+                "birthday" -> {
+                    setImageResource(imgList[0])
+                }
+                "graduated" -> {
+                    setImageResource(imgList[1])
+                }
+                "employment" -> {
+                    setImageResource(imgList[2])
+                }
+                "romantic" -> {
+                    setImageResource(imgList[3])
+                }
+                "etc" -> {
+                    setImageResource(imgList[4])
+                }
+            }
+        }
         holder.binding.imageView.setOnClickListener {
             viewModel.callEventFeedClick(position)
         }
@@ -46,7 +61,7 @@ class FeedViewPagerAdapter(
 
     inner class FeedViewPagerViewHolder(val binding: FeedItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
-              fun bind(data: Post) {
+        fun bind(data: Post) {
             binding.data = data
             binding.executePendingBindings()
         }
