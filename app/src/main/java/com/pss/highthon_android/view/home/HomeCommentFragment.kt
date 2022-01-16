@@ -36,17 +36,51 @@ class HomeCommentFragment :
         binding.recyclerView.adapter = HomeCommentRecyclerViewAdapter(setComment(), setNickname())
     }
 
-    fun clickBackBtn(view: View){
+    fun clickBackBtn(view: View) {
         mainViewModel.setActionView(true)
         this.findNavController().popBackStack()
     }
 
     private fun setComment(): ArrayList<String> {
-        return arrayListOf("생일축하포카링~", "기모띠 야매떄~", "이거슨 예시", "킥킥스")
+        return if (homeViewModel.eventFeedClick.value == 0) arrayListOf(
+            "박상선",
+            "정민혁",
+            "김민주",
+            "최윤성"
+        )
+        else if (homeViewModel.eventFeedClick.value == 1) arrayListOf(
+            "민경모",
+            "강산하",
+            "양태웅",
+            "정직한"
+        )
+        else arrayListOf(
+            "민경모",
+            "강산하",
+            "양태웅",
+            "정직한"
+        )
     }
 
     private fun setNickname(): ArrayList<String> {
-        return arrayListOf("adfds~", "기모ewfe띠~", "aadsf예시", "asdfa")
+        return if (homeViewModel.eventFeedClick.value == 0) arrayListOf(
+            "생일축하포카링~ 짜식 맛있는거 많이 먹으라",
+            "간단히 쓴다, 추카",
+            "이열~ 생일 축하하고 학교에서 보자~",
+            "선배 생일 축하해요, 앞으로도 잘 부탁드려요!"
+        )
+        else if (homeViewModel.eventFeedClick.value == 1) arrayListOf(
+            "생일 축하는 하는데 말이야.. 그래.. 축하하다..~",
+            "생일빵 받으러 간다, 잠깐 딱 기다리도록",
+            "너 이 자식!!!!!!! 생축",
+            "나도 내일 생일이다, 물론 구라고~"
+        )
+        else arrayListOf(
+            "생일 축하는 하는데 말이야.. 그래.. 축하하다..~",
+            "생일빵 받으러 간다, 잠깐 딱 기다리도록",
+            "이거슨 예시",
+            "킥킥스"
+        )
     }
 
 }
