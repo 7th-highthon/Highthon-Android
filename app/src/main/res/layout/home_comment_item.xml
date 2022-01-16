@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_contentview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/home_background"
+    android:backgroundTint="@color/main_color"
+    android:elevation="6dp">
+
+    <TextView
+        android:id="@+id/comment_textView"
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/notosans_bold"
+        android:includeFontPadding="false"
+        android:text="생일 축하해~ 오늘은 너의 날이니까 맛있는거 많이먹어! 앞으로도 건강하게 잘 지내보자!"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/comment_textView"
+        app:layout_constraintStart_toStartOf="@+id/comment_textView"
+        app:layout_constraintTop_toBottomOf="@+id/comment_textView">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_medium"
+            android:text="Write by"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintStart_toStartOf="@+id/comment_textView"
+            app:layout_constraintTop_toBottomOf="@+id/comment_textView" />
+
+        <TextView
+            android:id="@+id/nickname_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/notosans_medium"
+            android:includeFontPadding="false"
+            android:text="최윤성"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="@+id/comment_textView"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/comment_textView" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

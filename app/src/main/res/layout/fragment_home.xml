@@ -13,7 +13,7 @@
         tools:context=".view.homeFragment">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/app_name_margin"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/feed_view_pager2"

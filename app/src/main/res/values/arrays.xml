@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="catagory">
+        <item>전체</item>
+        <item>생일</item>
+        <item>졸업</item>
+        <item>취업</item>
+        <item>연애</item>
+    </string-array>
+</resources>

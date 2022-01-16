@@ -10,6 +10,7 @@ import com.pss.highthon_android.R
 import com.pss.highthon_android.base.BaseActivity
 import com.pss.highthon_android.databinding.ActivityMainBinding
 import com.pss.highthon_android.viewmodel.MainViewModel
+import com.pss.highthon_android.widget.extension.setVisibility
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,6 +21,16 @@ class MainActivity : BaseActivity<ActivityMainBinding>(R.layout.activity_main) {
     override fun init() {
         setContrastBar(this, Color.parseColor("#FFFFFF"))
         initBottomNavBar()
+        observeViewModel()
+    }
+
+    private fun observeViewModel() {
+        mainViewModel.eventActionView.observe(this, {
+            when (it) {
+                true -> binding.bottomNav.setVisibility(true)
+                false -> binding.bottomNav.setVisibility(false)
+            }
+        })
     }
 
     private fun initBottomNavBar() {
